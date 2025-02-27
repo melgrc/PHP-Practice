@@ -1,0 +1,39 @@
+<?php
+$name = "John";
+$age = 25;
+$favoriteColor = "blue";
+
+echo "Name: $name<br>";
+echo "Age: $age<br>";
+echo "Favorite Color: $favoriteColor";
+?>
+
+<?php
+$number = 10;
+
+if ($number % 2 == 0) {
+    echo "$number is even";
+} else {
+    echo "$number is odd";
+}
+?>
+
+<?php
+$fruits = array("Apple", "Banana", "Cherry", "Date");
+
+foreach ($fruits as $fruit) {
+    echo $fruit . "<br>";
+}
+?>
+
+<?php
+$employees = array(
+    "John" => array("age" => 30, "position" => "Manager"),
+    "Jane" => array("age" => 25, "position" => "Developer"),
+    "Doe" => array("age" => 28, "position" => "Designer")
+);
+
+foreach ($employees as $name => $details) {
+    echo "$name: Age - " . $details['age'] . ", Position - " . $details['position'] . "<br>";
+}
+?>
